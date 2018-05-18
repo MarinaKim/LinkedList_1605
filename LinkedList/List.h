@@ -40,7 +40,6 @@ public:
 	void delFirst();
 	void delLast();
 
-	void delEl(const T n);
 	bool Find(T n);
 	T& operator[](int index);
 	

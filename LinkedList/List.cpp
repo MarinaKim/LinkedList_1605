@@ -121,27 +121,6 @@ T & List<T>::operator[](int index)
 }
 
 template<typename T>
-void List<T>::delEl(const T n)
-{
-	Node *curPtr = firstPtr;
-	Node *tmp;
-	while (curPtr!= lastPtr)
-	{
-		if (curPtr->data == n)
-		{
-			firstPtr = curPtr->nextPtr;
-			tmp = curPtr->nextPtr;
-			delete curPtr;
-			curPtr= tmp;
-			count--;
-		}
-		else
-		curPtr = curPtr->nextPtr;
-	}	
-}
-
-
-template<typename T>
 List<T>::~List()
 {
 	Node *curPtr;	

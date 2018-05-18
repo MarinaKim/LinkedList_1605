@@ -63,24 +63,6 @@ int main() {
 		L.pushBack(15);
 		cout << L[1] << endl;
 	}break;
-	case 6: {
-		List <int> L;
-		L.pushBack(5);
-		/*L.pushBack(12);*/
-		L.pushBack(15);
-		/*L.pushBack(15);
-		L.pushBack(15);
-		L.pushBack(15);*/
-		L.pushBack(12);
-		L.print();
-		cout << "------------------------------" << endl;
-		L.delEl(15);
-		
-		L.print();
-		cout << "------------------------------" << endl;
-		
-	}break;
-
 	}
 	system("pause");
 	return 0;
