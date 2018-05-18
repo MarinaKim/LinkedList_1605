@@ -66,15 +66,16 @@ int main() {
 	case 6: {
 		List <int> L;
 		L.pushBack(5);
-		L.pushBack(12);
+		/*L.pushBack(12);*/
 		L.pushBack(15);
+		/*L.pushBack(15);
 		L.pushBack(15);
-		L.pushBack(15);
-		L.pushBack(15);
+		L.pushBack(15);*/
 		L.pushBack(12);
 		L.print();
 		cout << "------------------------------" << endl;
 		L.delEl(15);
+		
 		L.print();
 		cout << "------------------------------" << endl;
 		

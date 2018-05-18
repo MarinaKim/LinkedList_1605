@@ -88,14 +88,6 @@ void List<T>::delLast()
 	count--;
 }
 
-/*void vector::delPos(const int &pos)
-{
-	for (int i = pos - 1; i < cur_size; i++)
-		els[i] = els[i + 1];
-	cur_size--;
-}
-*/
-
 template<typename T>
 bool List<T>::Find(T n)
 {
@@ -133,19 +125,21 @@ void List<T>::delEl(const T n)
 {
 	Node *curPtr = firstPtr;
 	Node *tmp;
-	while (curPtr->nextPtr != nullptr)
+	while (curPtr!= lastPtr)
 	{
 		if (curPtr->data == n)
 		{
+			firstPtr = curPtr->nextPtr;
 			tmp = curPtr->nextPtr;
 			delete curPtr;
 			curPtr= tmp;
+			count--;
 		}
-		/*curPtr = curPtr->nextPtr;*/
-	}
-	
-	
+		else
+		curPtr = curPtr->nextPtr;
+	}	
 }
+
 
 template<typename T>
 List<T>::~List()

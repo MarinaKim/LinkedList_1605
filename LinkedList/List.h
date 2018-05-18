@@ -43,7 +43,7 @@ public:
 	void delEl(const T n);
 	bool Find(T n);
 	T& operator[](int index);
-
+	
 	~List();
 };
 
